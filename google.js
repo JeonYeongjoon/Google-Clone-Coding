@@ -1,5 +1,10 @@
-const input = document.getElementsByClassName('search')[0];
+function enterSearch(){
+    if(window.event.keyword == 13){
+        myFunction();
+    }
+}
 
-input.addEventListener('change',(이밴추)=>{
-    console.log(이밴추);
-})
+function myFunction(){
+    var keyword = document.getElementsByClassName("search").value;
+    window.location.href = "https://www.google.co.kr/search?q="+keyword;
+}
