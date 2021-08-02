@@ -6,5 +6,6 @@ function enterSearch(){
 
 function myFunction(){
     var keyword = document.getElementsByClassName("search").value;
-    window.location.href = "https://www.google.co.kr/search?q="+keyword;
+    location.href = "https://www.google.co.kr/search?q="+keyword;
 }
+
